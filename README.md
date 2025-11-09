@@ -141,8 +141,15 @@ Logging configuration in `config/logging.yaml`:
 - Logs stored in `logs/etl.json`
 
 ## Usage
+```bash
+# Clean temporary files and virtualenv
+make clean
 
+# See all available commands
+make help
+```
 ### Running the ETL Pipeline
+
 
 1. **API Source** (Copy Mode):
 ```bash
@@ -155,6 +162,12 @@ python -m src.main --source api --load-mode copy
 make run-api-upsert
 # or
 python -m src.main --source api --load-mode upsert
+```
+3. ** Generate users data
+```
+make generate-users
+# or
+python src/generateusers.py
 ```
 
 2. **File Source** (Copy Mode):
@@ -184,9 +197,6 @@ python -m src.main --source db --load-mode upsert
 ### Development Commands
 
 ```bash
-# Run tests
-make test
-
 # Clean temporary files and virtualenv
 make clean
 

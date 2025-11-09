@@ -56,6 +56,7 @@ run-api-upsert: venv
 generate-users: venv
 	@echo "Generating sample users.csv file with $(num_records) records."
 	$(PYTHON) src/generateusers.py
+	
 run-file: venv
 	@echo "Running ETL: source=file, load-mode=upsert"
 	$(PYTHON) -m src.main --source file --load-mode copy
