@@ -2,6 +2,35 @@
 
 A robust ETL (Extract, Transform, Load) pipeline built with Python, designed to process data from multiple sources and load it into a PostgreSQL database.
 
+## Project Structure
+
+```
+etl-python-project/
+├── config/
+│   ├── logging.yaml     # Logging configuration
+│   └── settings.yaml    # ETL settings
+├── logs/
+│   └── etl.json        # JSON formatted logs
+├── src/
+│   ├── etl/
+│   │   ├── extract/    # Data extraction modules
+│   │   ├── transform/  # Transformation logic
+│   │   └── load/       # Database loading modules
+│   ├── config.py       # Configuration management
+│   ├── logging_setup.py # Logging initialization
+│   ├── main.py         # CLI entry point
+│   └── models.py       # Pydantic data models
+├── docker/
+│   └── docker-compose.yml  # Docker services config
+├── tests/              # Test files
+├── .env               # Environment variables
+├── .gitignore
+├── Makefile           # Development commands
+├── pyproject.toml     # Project metadata and dependencies
+└── README.md          # This file
+```
+
+
 ## Features
 
 - **Multiple Data Sources**:
@@ -163,34 +192,6 @@ make clean
 
 # See all available commands
 make help
-```
-
-## Project Structure
-
-```
-etl-python-project/
-├── config/
-│   ├── logging.yaml     # Logging configuration
-│   └── settings.yaml    # ETL settings
-├── logs/
-│   └── etl.json        # JSON formatted logs
-├── src/
-│   ├── etl/
-│   │   ├── extract/    # Data extraction modules
-│   │   ├── transform/  # Transformation logic
-│   │   └── load/       # Database loading modules
-│   ├── config.py       # Configuration management
-│   ├── logging_setup.py # Logging initialization
-│   ├── main.py         # CLI entry point
-│   └── models.py       # Pydantic data models
-├── docker/
-│   └── docker-compose.yml  # Docker services config
-├── tests/              # Test files
-├── .env               # Environment variables
-├── .gitignore
-├── Makefile           # Development commands
-├── pyproject.toml     # Project metadata and dependencies
-└── README.md          # This file
 ```
 
 
