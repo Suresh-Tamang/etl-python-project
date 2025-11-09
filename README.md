@@ -62,10 +62,17 @@ cd docker
 docker-compose up -d
 ```
 
-5. Configure environment variables:
+5. Database Table
 ```bash
-# Copy the example env file and modify as needed
-cp .env.example .env
+# Run SQL query to create table
+CREATE TABLE users (
+    id serial PRIMARY KEY,
+    email varchar(255),
+    first_name varchar(50),
+    last_name varchar(50),
+    avatar varchar(255)
+);
+CREATE TABLE latest_users (LIKE users INCLUDING ALL);
 ```
 
 ## Configuration
