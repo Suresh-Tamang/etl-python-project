@@ -16,6 +16,7 @@ help:
 	@echo "  install-dev	 	- install runtime + development extras (pytest, black)"
 	@echo "  run-api     		- run ETL using API source (copy mode)"
 	@echo "  run-api-upsert     	- run ETL using API source (upsert mode)"
+	@echo "  generate-users		- generate sample users.csv file in data/ folder"
 	@echo "  run-file    		- run ETL using file source (copy mode)"
 	@echo "  run-file-upsert    	- run ETL using file source (upsert mode)"
 	@echo "  run-db      		- run ETL using db source (copy mode)"
@@ -52,6 +53,9 @@ run-api-upsert: venv
 	@echo "Running ETL: source=api, load-mode=copy"
 	$(PYTHON) -m src.main --source api --load-mode upsert
 
+generate-users: venv
+	@echo "Generating sample users.csv file with $(num_records) records."
+	$(PYTHON) src/generateusers.py
 run-file: venv
 	@echo "Running ETL: source=file, load-mode=upsert"
 	$(PYTHON) -m src.main --source file --load-mode copy

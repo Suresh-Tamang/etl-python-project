@@ -74,7 +74,6 @@ CREATE TABLE users (
 );
 CREATE TABLE latest_users (LIKE users INCLUDING ALL);
 ```
-
 ## Configuration
 
 ### Environment Variables
