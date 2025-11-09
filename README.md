@@ -170,25 +170,25 @@ make generate-users
 python src/generateusers.py
 ```
 
-2. **File Source** (Copy Mode):
+4. **File Source** (Copy Mode):
 ```bash
 make run-file
 # or
 python -m src.main --source file --load-mode copy
 ```
-3. **File Source** (Upsert Mode):
+5. **File Source** (Upsert Mode):
 ```bash
 make run-file-upsert
 # or
 python -m src.main --source file --load-mode upsert
 ```
-3. **Database Source** (Copy Mode):
+6. **Database Source** (Copy Mode):
 ```bash
 make run-db
 # or
 python -m src.main --source db --load-mode copy
 ```
-3. **Database Source** (Upsert Mode):
+7. **Database Source** (Upsert Mode):
 ```bash
 make run-db-upsert
 # or
