@@ -1,0 +1,21 @@
+{"timestamp": "2025-11-09 12:45:44,858", "level": "INFO", "message": "Retrieved 12 records from API", "name": "__main__"}
+{"timestamp": "2025-11-09 12:45:44,932", "level": "INFO", "message": "Loaded 12 rows into public.users using copy", "name": "__main__"}
+{"timestamp": "2025-11-09 12:45:44,932", "level": "INFO", "message": "ETL process completed successfully. Loaded 12 rows into public.users.", "name": "__main__"}
+{"timestamp": "2025-11-09 12:46:48,572", "level": "INFO", "message": "File not found: data/users.csv", "name": "root"}
+{"timestamp": "2025-11-09 12:46:48,627", "level": "INFO", "message": "Retrieved 10000 records from File", "name": "__main__"}
+{"timestamp": "2025-11-09 12:46:48,627", "level": "INFO", "message": "Extracted 10000 rows from file", "name": "__main__"}
+{"timestamp": "2025-11-09 12:46:48,795", "level": "INFO", "message": "Loaded 10000 rows into public.users using copy", "name": "__main__"}
+{"timestamp": "2025-11-09 12:46:48,795", "level": "INFO", "message": "ETL process completed successfully. Loaded 10000 rows into public.users.", "name": "__main__"}
+{"timestamp": "2025-11-09 12:47:29,069", "level": "INFO", "message": "File not found: data/users.csv", "name": "root"}
+{"timestamp": "2025-11-09 12:47:29,117", "level": "INFO", "message": "Retrieved 10000 records from File", "name": "__main__"}
+{"timestamp": "2025-11-09 12:47:29,117", "level": "INFO", "message": "Extracted 10000 rows from file", "name": "__main__"}
+{"timestamp": "2025-11-09 12:47:29,283", "level": "INFO", "message": "Loaded 10000 rows into public.users using copy", "name": "__main__"}
+{"timestamp": "2025-11-09 12:47:29,283", "level": "INFO", "message": "ETL process completed successfully. Loaded 10000 rows into public.users.", "name": "__main__"}
+{"timestamp": "2025-11-09 12:47:56,760", "level": "INFO", "message": "Retrieved 12 records from API", "name": "__main__"}
+{"timestamp": "2025-11-09 12:47:56,760", "level": "INFO", "message": "Extracted 12 rows from api", "name": "__main__"}
+{"timestamp": "2025-11-09 12:47:56,826", "level": "INFO", "message": "Loaded 12 rows into public.users using copy", "name": "__main__"}
+{"timestamp": "2025-11-09 12:47:56,826", "level": "INFO", "message": "ETL process completed successfully. Loaded 12 rows into public.users.", "name": "__main__"}
+{"timestamp": "2025-11-09 12:48:08,911", "level": "INFO", "message": "Retrieved 12 records from API", "name": "__main__"}
+{"timestamp": "2025-11-09 12:48:08,912", "level": "INFO", "message": "Extracted 12 rows from api", "name": "__main__"}
+{"timestamp": "2025-11-09 12:48:08,995", "level": "INFO", "message": "Loaded 12 rows into public.users using upsert", "name": "__main__"}
+{"timestamp": "2025-11-09 12:48:08,995", "level": "INFO", "message": "ETL process completed successfully. Loaded 12 rows into public.users.", "name": "__main__"}
