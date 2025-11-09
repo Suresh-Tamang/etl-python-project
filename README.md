@@ -80,8 +80,6 @@ source .venv/bin/activate
 # For runtime dependencies only
 make install
 
-# For development dependencies (includes testing tools)
-make install-dev
 ```
 
 4. Set up the database:
